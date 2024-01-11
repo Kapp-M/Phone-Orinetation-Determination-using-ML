@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Welcome to TREKKSTER</title>
+<!-- 
+Journey Template 
+http://www.templatemo.com/tm-511-journey
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+      </head>
+
+      <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>    
+            <div class="tm-top-bar" id="tm-top-bar">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="#">
+                                <img src="img/logo.png" alt="Site logo">
+                                Trekkster
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="#top">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-2">Top Destinations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-3">Recommended Places</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-4">Contact Us</a>
+                                </li>
+				<li class="nav-item">
+				    <a class="nav-link" href="#tm-section-5">About Us</a>
+				</li>
+
+				<li class="nav-item">
+				    <a class="nav-link" href="#tm-section-6">Feedback</a>
+				</li>
+                            </ul>
+                        </div>                            
+                    </nav>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- .tm-top-bar -->
+
+        <div class="tm-page-wrap mx-auto">
+            <section class="tm-banner">
+                <div class="tm-container-outer tm-banner-bg">
+                    <div class="container">
+
+                        <div class="row tm-banner-row tm-banner-row-header">
+                            <div class="col-xs-12">
+                                <div class="tm-banner-header">
+                                    <h1 class="text-uppercase tm-banner-title">Let's begin</h1>
+                                    <img src="img/dots-3.png" alt="Dots">
+                                    <p class="tm-banner-subtitle">We assist you to choose the best.</p>
+                                    <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
+                                </div>    
+                            </div>  <!-- col-xs-12 -->                      
+                        </div> <!-- row -->
+                        <div class="row tm-banner-row" id="tm-section-search">
+
+                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">                                
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="inputCity">Choose Your Destination</label>
+                                        <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination...">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-1">                                    
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                            <label for="inputRoom">How many rooms?</label>
+                                            <select name="room" class="form-control tm-select" id="inputRoom">
+                                                <option value="1" selected>1 Room</option>
+                                                <option value="2">2 Rooms</option>
+                                                <option value="3">3 Rooms</option>
+                                                <option value="4">4 Rooms</option>
+                                                <option value="5">5 Rooms</option>
+                                                <option value="6">6 Rooms</option>
+                                                <option value="7">7 Rooms</option>
+                                                <option value="8">8 Rooms</option>
+                                                <option value="9">9 Rooms</option>
+                                                <option value="10">10 Rooms</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
+                                            <label for="inputAdult">Adult</label>     
+                                            <select name="adult" class="form-control tm-select" id="inputAdult">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+
+                                            <label for="inputChildren">Children</label>                                            
+                                            <select name="children" class="form-control tm-select" id="inputChildren">
+                                            	<option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>                                        
+                                        </div>
+                                    </div>
+                                </div> <!-- form-row -->
+                                <div class="form-row tm-search-form-row">
+
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckIn">Check In Date</label>
+                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Check In">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+                                        <label for="inputCheckOut">Check Out Date</label>
+                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Check Out">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="btnSubmit">&nbsp;</label>
+                                        <button type="submit" class="btn btn-primary tm-btn tm-btn-search text-uppercase" id="btnSubmit">Check Availability</button>
+                                    </div>
+                                </div>                              
+                            </form>                             
+
+                        </div> <!-- row -->
+                        <div class="tm-banner-overlay"></div>
+                    </div>  <!-- .container -->                   
+                </div>     <!-- .tm-container-outer -->                 
+            </section>
+
+            <section class="p-5 tm-container-outer tm-bg-gray">            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 mx-auto tm-about-text-wrap text-center">                        
+                            <h2 class="text-uppercase mb-4">Your <strong>Safety</strong> is our priority</h2>
+                            <p class="mb-4">Explore the fun with Trekkster Community , we assure you the Guaranteed Joy with a well experienced team having experience of over 15 years !!</p>
+                            <a href="#" class="text-uppercase btn-primary tm-btn">Continue explore</a>                              
+                        </div>
+                    </div>
+                </div>            
+            </section>
+            
+            <div class="tm-container-outer" id="tm-section-2">
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/tm-img-01.jpg" alt="Image">
+                        <img src="img/tm-img-02.jpg" alt="Image">
+                        <img src="img/tm-img-03.jpg" alt="Image"> 
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Top Destination #1- MANALI</h2>
+                        <p>Mountains humble you and make you feel special about your being. Himachal in the north is dotted with alpine trees, and cutting through them are daunting trails that epitomise a mountain’s true charm. Infinite vistas and snow-capped peaks keep uplifting your soul when the body cedes to climb. Something similar is the story of trekking in Manali..</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+                <section class="clearfix tm-slideshow-section tm-slideshow-section-reverse">
+
+                    <div class="tm-right tm-slideshow tm-slideshow-highlight">
+                        <img src="img/tm-img-02.jpg" alt="Image">
+                        <img src="img/tm-img-03.jpg" alt="Image">
+                        <img src="img/tm-img-01.jpg" alt="Image">
+                    </div> 
+
+                    <div class="tm-slideshow-description tm-slideshow-description-left tm-bg-highlight">
+                        <h2 class="">Top Destination #2- RISHIKESH</h2>
+                        <p>If trudging through the winding treks in the Shivaliks lures you, there’s nothing like trekking in Rishikesh. Rishikesh is surrounded by Sivalik mountain range and one can trek to several waterfalls at the location. There are quite a few temples built on heights, so one can trek to these too.</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-highlight">Continue Reading</a>
+                    </div>                        
+
+                </section>
+                <section class="tm-slideshow-section">
+                    <div class="tm-slideshow">
+                        <img src="img/tm-img-03.jpg" alt="Image">
+                        <img src="img/tm-img-02.jpg" alt="Image">
+                        <img src="img/tm-img-01.jpg" alt="Image">
+                    </div>
+                    <div class="tm-slideshow-description tm-bg-primary">
+                        <h2 class="">Top Destination #3- JAMMU & KASHMIR</h2>
+                        <p> The Kashmir valley is a portion of north Indian Himalayan ranges and Intermundane of Jammu and Kashmir India. The Vale of Kashmir have multiplicity of treks to explore, the large portion of Kashmir valley is forests, mountains, Glacier, and lakes which produce natural environment for outdoor activities. Kashmir is a complete package for adventure lovers. Kashmir presents four Season Sightseeing and trekking itineraries for summer, spring, autumn and winter. The main Kashmir trekking bases are Sonamarg, Pahalgam, Yousmarg and Gulmarg.</p>
+                        <a href="#" class="text-uppercase tm-btn tm-btn-white tm-btn-white-primary">Continue Reading</a>
+                    </div>
+                </section>
+            </div>        
+            <div class="tm-container-outer" id="tm-section-3">
+                <ul class="nav nav-pills tm-tabs-links">
+                    <li class="tm-tab-link-li">
+                        <a href="#1a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/north-america.png" alt="Image" class="img-fluid">
+                            Top Trending Treks Of All time
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#2a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/south-america.png" alt="Image" class="img-fluid">
+                            1-2 Day Weekend Camps
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#3a" data-toggle="tab" class="tm-tab-link">
+                            <img src="img/europe.png" alt="Image" class="img-fluid">
+                            Weekly Treks And Camps
+                        </a>
+                    </li>
+                    <li class="tm-tab-link-li">
+                        <a href="#4a" data-toggle="tab" class="tm-tab-link active"><!-- Current Active Tab -->
+                            <img src="img/asia.png" alt="Image" class="img-fluid">
+                            Long Period Treks And Camps
+                        </a>
+                    </li>
+              
+                </ul>
+                <div class="tab-content clearfix">
+                	
+                    <!-- Tab 1 -->
+                    <div class="tab-pane fade" id="1a">
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/manali.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">MANALI SUMMER TREKKING CAMP</h3>
+                                    <p class="tm-text-highlight">10 days-9 nights</p>
+                                    <p class="tm-text-gray">Manali, one of the most famous hill station of India in the northern end of Kullu Valley (Himachal Pradesh). The word Manali is regarded as the changed name of “Manu-Alaya” which literally means “The Abode of Manu”.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">14,999 INR</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/dalhousie.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">DALHOUSIE WINTER SNOW TREKKING CAMP</h3>
+                                    <p class="tm-text-highlight">8 days-7 nights</p>
+                                    <p class="tm-text-gray">Dalhousie Trekking & Adventure Camp is specially planned for the less explored field of snow trekking & Adventure in Himalayas. During the months of December-February, the nearby area of Dalhousie remains covered with snow and it creates appropriate situation for a Snow trekking & Adventure.</p>   
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">7,500 INR</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/abu.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">MOUNT ABU WEEKEND ADVENTURE CAMP</h3>
+                                    <p class="tm-text-highlight">3 days-2 nights</p>
+                                    <p class="tm-text-gray">Mount Abu is a hill station in western India’s Rajasthan state, near the Gujarat border. Situated amidst lush green, forested hills on the highest peak in the Aravali range. Set on a high rocky plateau in the Aravalli Range and surrounded by forest, it offers a relatively cool climate and views over the arid plains below.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">2,999 INR</p>
+                                </a>
+                            </div>
+
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 2 -->
+                    <div class="tab-pane fade" id="2a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/saputara.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">SAPUTARA WEEKEND ADVENTURE CAMP</h3>
+                                    <p class="tm-text-highlight">3 dyas-2 nights</p>
+                                    <p class="tm-text-gray">One of the few hill stations in Gujarat, Saputara is situated in the heart of the Dang district. Perched on the second-highest plateau of the Sahyadri range, it literally means the 'abode of serpents. Overlooking a lush green valley, this unpretentious destination is a good place to unwind, go trekking or take leisurely hill walks. Blessed with exhilarating natural beauty, the town has verdant forests, gorgeous waterfalls, and a plethora of lush gardens.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">2,999 INR</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/bakor.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">BAKOR WEEKEND ADVENTURE CAMP</h3>
+                                    <p class="tm-text-highlight">1 day -0 nights</p>
+                                    <p class="tm-text-gray">Bakor is a village situated in mahisagar district of Gujarat. Bakor has located 150 km from Ahmedabad. This Forest camp will consist of exploring & discovering the nature around village Bakor. This camp organized for all people like family, corporate, school/college tour. This Camp Organised every Sunday and Holiday.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">1,199 INR</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/polo.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">POLO FOREST WEEKEND TREKKING CAMP</h3>
+                                    <p class="tm-text-highlight">2 days-1 night</p>
+                                    <p class="tm-text-gray">Batches available on Every Saturday to Sunday & Special Occasion and Holiday) Age Allowed: 08 years to 40 years</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">999 INR</p>
+                                </a>
+                            </div>
+
+                            
+                        </div>                        
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->          
+                    
+                    <!-- Tab 3 -->     
+                    <div class="tab-pane fade" id="3a">
+
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/kedarkantha.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Kedarkantha Trek - Winter Snow Camping & Trekking</h3>
+                                    <p class="tm-text-highlight">5 days-4 nights</p>
+                                    <p class="tm-text-gray">Kedarkantha Trek in Uttarakhand is one of the most beautiful treks which take you to the land of some of the best views which you will cherish for a lifetime. Age group: 12 year to 35 Year</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">4,999 INR</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/kasol.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Kasol Sar Pass Trek</h3>
+                                    <p class="tm-text-highlight">6 days-5 nights</p>
+                                    <p class="tm-text-gray">One of the most widely sought after treks in India, the Sar Pass trek climbs up to an altitude of about 13,700 ft., and opens up to magnificent views of the vicinal Himalayan peaks</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">6,999 INR</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/jaisalmer.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">Jaisalmer Desert Camping & Trekking</h3>
+                                    <p class="tm-text-highlight">4 days- 3 nights</p>
+                                    <p class="tm-text-gray">Sपधारो म्हारे देश Get Ready with your friends.. and make experience The Royalty of Rajasthan Age Limit: 08 to 40 years Allowed</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">3,499 INR</p>
+                                </a>
+                            </div>
+			</div>
+                                          
+
+                        <a href="#" class="text-uppercase btn-primary tm-btn mx-auto tm-d-table">Show More Places</a>
+                    </div> <!-- tab-pane -->
+                    
+                    <!-- Tab 4 -->
+                    <div class="tab-pane fade show active" id="4a">
+                    <!-- Current Active Tab WITH "show active" classes in DIV tag -->
+                        <div class="tm-recommended-place-wrap">
+                            <div class="tm-recommended-place">
+                                <img src="img/himachal.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">ADVENTURE TRIP TO HIMACHAL PRADESH</h3>
+                                    <p class="tm-text-highlight">11 days-10 nights</p>
+                                    <p class="tm-text-gray">Experiencing the view of hill stations surrounding Manali, Dalhousie & Dhramsala is a marvelous experience. Himachal opens up many opportunities for not only nature lovers, but also for people who are fond of adventure sports. There are many adventurous sports possible in Himachal Pradesh.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">13,500 INR</p>
+                                </a>                        
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/leh.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">THE LEH-LADAKH EXPEDITION</h3>
+                                    <p class="tm-text-highlight">14 days-13 nights</p>
+                                    <p class="tm-text-gray">Ladakh means “land of high passes”. Leh, a high-desert city in the Himalayas, is the capital of the Leh region in northern India’s Jammu and Kashmir state. Originally a stop for trading caravans, Leh is now known for its Buddhist sites and nearby trekking areas.</p>   
+                                </div>
+                                <div id="preload-hover-img"></div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">22,500 INR</p>
+                                </a>
+                            </div>
+
+                            <div class="tm-recommended-place">
+                                <img src="img/jayalgarh.jpg" alt="Image" class="img-fluid tm-recommended-img">
+                                <div class="tm-recommended-description-box">
+                                    <h3 class="tm-recommended-title">JAYALGARH WHITE-WATER RAFTING CAMP</h3>
+                                    <p class="tm-text-highlight">8 days-7 nights</p>
+                                    <p class="tm-text-gray">The Trekkster campsite at Jayalgarh is adorned with bright green fields of fresh vegetables and the background score of the splashing Alaknanda River.  If that wasn’t enough, its location offers a secluded, one-of-a-kind experience to all campers. Jayalgarh is a wonderful retreat for the entire family, a group of friends or just you.</p>   
+                                </div>
+                                <a href="#" class="tm-recommended-price-box">
+                                    <p class="tm-recommended-price">17,500 INR</p>
+                                </a>
+                            </div>
+
+                            
+                        </div>                        
+
+                        
+                    </div> <!-- tab-pane -->
+                    
+                    >
+                </div>
+            </div>
+
+            <div class="tm-container-outer tm-position-relative" id="tm-section-4">
+                <div id="google-map"></div>
+                <form action="index.php" method="post" class="tm-contact-form">
+			<h6>CONTACT US TO BOOK YOUR SEATS NOW !!</h6 ><br>
+                    <div class="form-group tm-name-container">Name:
+                        <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Enter your Name here"  required/>
+                    </div>
+                    <div class="form-group tm-email-container">Email:
+                        <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Enter your email here"  required/>
+                    </div>
+                    <div class="form-group">Place:
+                        <input type="text" id="contact_subject" name="contact_place" class="form-control" placeholder="Enter the place of trek you want to go"  required/>
+                    </div>
+                    <div class="form-group">Message
+                        <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Enter the dates when you are available or any details you want to know .. We will Check the Availibilty Status And Our Team will contact you soon !" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary tm-btn-primary tm-btn-send text-uppercase">Send</button>
+                </form>
+            </div> <!-- .tm-container-outer -->
+
+ 
+           <div class="tm-page-wrap mx-auto">
+            <section class="tm-banner">
+                <div class="tm-container-outer tm-banner-bg">
+                    <div class="container">
+		
+                        
+		
+<div class="tm-page-wrap mx-auto">
+            <section class="tm-banner">
+                <div class="tm-container-outer tm-banner-bg">
+                    <div class="container">
+		
+                        
+			<div class="tm-container-outer tm-position-relative" id="tm-section-5">
+                <div id="google-map"></div>
+		<center>
+<h1>About us!</h1>
+
+              ANALA OUTDOORS is a professional organisation committed to creating an environmentally conscious society through innovative outdoor-based programmes. It was an informal group of birdwatchers and wildlife enthusiasts way back in 1985. It has earned tremendous credibility and trustworthiness by performing to the utmost satisfaction of its clientele. 30 Years of continuous improvement and expansion have taken the activities to the entire state of Gujarat with programmes spread over various states and regions of India.
+
+
+OUR JOURNEY
+
+
+The “business” of nature camping was growing with new destinations, creating value additions…and the time had come for a larger organisation. Anala Outdoors established as a private limited company under Indian Companies Act with Chandresh Lodhiya, Imtiyaz  Gafoorjiwala and Madhu Menon as its promoters & directors.
+Trekkster continues the legacy of the movement that creates an environment conscious society through its innovative outdoor educational camps. Currently, the camps are organised at Hingolgadh, Jambughoda, Little & Greaterrn Ranns of Kachchh, Polo, Shoolpaneshwar and Gulf of Kachchh in Gujarat, Mount Abu, Kumbalgadh, Tejo ka Guda  & Jaisamand in Rajasthan, Panchgani in Maharashtra,  Dalhousie, Shimla, & Manali in Himachal Pradesh, Jayalgarh and Sitlakhet in Uttarakhand... and the list is still growing.
+
+From the rich experience gained from years of conducting environment-related activities and nature camps, Trekkster has initiated the concept of Eco-Tours in a modern way. Escorted tours to various have been made enjoyable and converted into learning experiences. Sikkim, Andaman & Nicobar, Lakshadweep Islands, Udaipur, Hyderabad Wagah Border, Periyar Tiger Reserve, Corbett National Park, Kashmir Valley…the list is getting expanded with every passing year. This programme is meant for Schools as well as individuals.
+
+Apart from the regular Camps & Tours, Trekkster is also active in the field of Corporate HR and Team Building activities. OBT – Outbound Training is fast catching up with the corporate world as an alternative for their expensive indoor training activities. In this programme, Trekkster utilizes the elements available in the outdoors for developing team-building, inter-personal communication and risk management. 
+
+Ahmedabad Nature Lovers’ Association became part of the social responsibility of Trekkster and continues to play an instrumental role in making environmental awareness and action a priority among city planners and the citizens of Ahmedabad.
+
+
+
+            </div> <!-- .tm-container-outer -->
+
+<div class="tm-page-wrap mx-auto">
+            <section class="tm-banner">
+                <div class="tm-container-outer tm-banner-bg">
+                    <div class="container">
+		
+                        
+			<div class="tm-container-outer tm-position-relative" id="tm-section-6">
+                <div id="google-map"></div>
+		<center>
+
+                <form action="index.html" method="post" class="tm-contact-form" >
+
+			<h3>We always welcome valuable Feedbacks!</h3>
+
+                    <div class="form-group tm-name-container">
+                        <input type="text" id="contact_name" name="feedback_name" class="form-control" placeholder="Enter your Name"  required/>
+                    </div>
+                    <div class="form-group tm-email-container">
+                        <input type="email" id="contact_email" name="feedback_email" class="form-control" placeholder="Enter you Email id:"  required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contact_subject" name="feedback_subject" class="form-control" placeholder="Subject"  required/>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact_message" name="feedback_message" class="form-control" rows="9" placeholder="Have a query or suggestion? Please let us know by filling the form." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary tm-btn-primary tm-btn-send text-uppercase">Submit</button>
+             
+ </form>
+
+            </div> <!-- .tm-container-outer -->
+
+            <footer class="tm-container-outer">
+                <p class="mb-0">Copyright © <span class="tm-current-year">2018</span> Trekkster.com 
+                    
+                . Designed by <a rel="nofollow" href="http://www.google.com/+templatemo" target="_parent">Trekkster and Co.</a></p>
+            </footer>
+        </div>
+    </div> <!-- .main-content -->
+
+    <!-- load JS files -->
+    <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+    <script src="js/popper.min.js"></script>                    <!-- https://popper.js.org/ -->       
+    <script src="js/bootstrap.min.js"></script>                 <!-- https://getbootstrap.com/ -->
+    <script src="js/datepicker.min.js"></script>                <!-- https://github.com/qodesmith/datepicker -->
+    <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+    <script src="slick/slick.min.js"></script>                  <!-- http://kenwheeler.github.io/slick/ -->
+    <script src="js/jquery.scrollTo.min.js"></script>           <!-- https://github.com/flesler/jquery.scrollTo -->
+    <script> 
+        /* Google Maps
+        ------------------------------------------------*/
+        var map = '';
+        var center;
+
+        function initialize() {
+            var mapOptions = {
+                zoom: 16,
+                center: new google.maps.LatLng(23.02579, 72.58727),
+                scrollwheel: false
+            };
+
+            map = new google.maps.Map(document.getElementById('google-map'),  mapOptions);
+
+            google.maps.event.addDomListener(map, 'idle', function() {
+              calculateCenter();
+          });
+
+            google.maps.event.addDomListener(window, 'resize', function() {
+              map.setCenter(center);
+          });
+        }
+
+        function calculateCenter() {
+            center = map.getCenter();
+        }
+
+        function loadGoogleMap(){
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&v=3.exp&sensor=false&' + 'callback=initialize';
+            document.body.appendChild(script);
+        } 
+
+        /* DOM is ready
+        ------------------------------------------------*/
+        $(function(){
+
+            // Change top navbar on scroll
+            $(window).on("scroll", function() {
+                if($(window).scrollTop() > 100) {
+                    $(".tm-top-bar").addClass("active");
+                } else {                    
+                 $(".tm-top-bar").removeClass("active");
+                }
+            });
+
+            // Smooth scroll to search form
+            $('.tm-down-arrow-link').click(function(){
+                $.scrollTo('#tm-section-search', 300, {easing:'linear'});
+            });
+
+            // Date Picker in Search form
+            var pickerCheckIn = datepicker('#inputCheckIn');
+            var pickerCheckOut = datepicker('#inputCheckOut');
+
+            // Update nav links on scroll
+            $('#tm-top-bar').singlePageNav({
+                currentClass:'active',
+                offset: 60
+            });
+
+            // Close navbar after clicked
+            $('.nav-link').click(function(){
+                $('#mainNav').removeClass('show');
+            });
+
+            // Slick Carousel
+            $('.tm-slideshow').slick({
+                infinite: true,
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+
+            loadGoogleMap();                                       // Google Map                
+            $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright           
+        });
+
+    </script>             
+
+</body>
+</html>

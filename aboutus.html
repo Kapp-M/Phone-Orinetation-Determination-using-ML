@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Journey HTML CSS Template</title>
+<!-- 
+Journey Template 
+http://www.templatemo.com/tm-511-journey
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">                <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" type="text/css" href="css/datepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+      </head>
+
+      <body>
+        <div class="tm-main-content" id="top">
+            <div class="tm-top-bar-bg"></div>    
+            <div class="tm-top-bar" id="tm-top-bar">
+                <div class="container">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg narbar-light">
+                            <a class="navbar-brand mr-auto" href="#">
+                                <img src="img/logo.png" alt="Site logo">
+                                Journey
+                            </a>
+                            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <ul class="navbar-nav ml-auto">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" href="#top">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-2">Top Destinations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-3">Recommended Places</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#tm-section-4">Contact Us</a>
+                                </li>
+				<li class="nav-item">
+				    <a class="nav-link" href="#tm-section-5">About Us</a>
+				</li>
+
+				<li class="nav-item">
+				    <a class="nav-link" href="#tm-section-6">Feedback</a>
+				</li>
+                            </ul>
+                        </div>                            
+                    </nav>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- .tm-top-bar -->
+
+        <div class="tm-page-wrap mx-auto">
+            <section class="tm-banner">
+                <div class="tm-container-outer tm-banner-bg">
+                    <div class="container">
+		
+                        <div class="row tm-banner-row tm-banner-row-header">
+                            <div class="col-xs-12">
+                                <div class="tm-banner-header">
+                                    <h1 class="text-uppercase tm-banner-title">Let's begin</h1>
+                                    <img src="img/dots-3.png" alt="Dots">
+                                    <p class="tm-banner-subtitle">We assist you to choose the best.</p>
+                                    <a href="javascript:void(0)" class="tm-down-arrow-link"><i class="fa fa-2x fa-angle-down tm-down-arrow"></i></a>       
+                                </div>    
+                            </div>  <!-- col-xs-12 -->                      
+                        </div> <!-- row -->
+<!--
+                        <div class="row tm-banner-row" id="tm-section-search">
+
+                            <form action="index.html" method="get" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">                                
+                                    <div class="form-group tm-form-group tm-form-group-pad tm-form-group-1">
+                                        <label for="inputCity">Choose Your Destination</label>
+                                        <input name="destination" type="text" class="form-control" id="inputCity" placeholder="Type your destination...">
+                                    </div>
+                                    <div class="form-group tm-form-group tm-form-group-1">                                    
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-2">
+                                            <label for="inputRoom">How many rooms?</label>
+                                            <select name="room" class="form-control tm-select" id="inputRoom">
+                                                <option value="1" selected>1 Room</option>
+                                                <option value="2">2 Rooms</option>
+                                                <option value="3">3 Rooms</option>
+                                                <option value="4">4 Rooms</option>
+                                                <option value="5">5 Rooms</option>
+                                                <option value="6">6 Rooms</option>
+                                                <option value="7">7 Rooms</option>
+                                                <option value="8">8 Rooms</option>
+                                                <option value="9">9 Rooms</option>
+                                                <option value="10">10 Rooms</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">                                       
+                                            <label for="inputAdult">Adult</label>     
+                                            <select name="adult" class="form-control tm-select" id="inputAdult">
+                                                <option value="1" selected>1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                            </select>                                        
+                                        </div>
+                                        <div class="form-group tm-form-group tm-form-group-pad tm-form-group-3">
+
+                                            <label for="inputChildren">Children</label>                                            
+                                            <select name="children" class="form-control tm-select" id="inputChildren">
+                                            	<option value="0" selected>0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>                                        
+                                        </div>
+                                    </div>
+                                </div> <!-- form-row -->
+                                <div class="form-row tm-search-form-row">
+
+                                   
+                                    
+                                    
+                                </div>                              
+                            </form>                             
+-->
+ANALA OUTDOORS is a professional organisation committed to creating an environmentally conscious society through innovative outdoor-based programmes. It was an informal group of birdwatchers and wildlife enthusiasts way back in 1985. It has earned tremendous credibility and trustworthiness by performing to the utmost satisfaction of its clientele. 30 Years of continuous improvement and expansion have taken the activities to the entire state of Gujarat with programmes spread over various states and regions of India.
+
+
+OUR JOURNEY
+
+1985- A seed begins to sprout…
+
+A group of youngsters - enthusiastic about using their energies and synergies for a common goal got together to initiate a programme to sensitize the citizens towards nature and environment. They called themselves "AHMEDABAD NATURE LOVERS ASSOCIATION", which over a period of time got shortened to “Anala”. In Sanskrit, Anala means a  Spark.
+
+1990 - …and it spreads it roots
+
+A committed group of volunteers drawn from different walks of life, representing different parts of Gujarat, got attracted to the idea of ANALA and started spreading the message of environment protection to far-flung villages, schools and individuals.   Doctors, lawyers, designers, businessmen, engineers, chartered accountants, educationists … each one of them was different but had a common dream…to make this world a better one.
+
+1992 – rooted firmly, looking towards the sky
+
+Ahmedabad Nature Lovers’ Association functioned till 1992 as an informal group of birdwatchers, campers and wildlife. It became a formal organisation, a Charitable Trust under the Bombay Charitable Trust Act.  
+
+In the initial years, ANALA  focused its synergies on environment awareness campaigns through public demonstrations, street plays and study classes. The struggle against a proposed five-star hotel on one of the rare green patches of Ahmedabad city, conducting a nature exposure camp in a remote village of Panchmahal district and a Science Popularization March throughout the state of Gujarat with a street play troupe are a few of the commendable activities of ANALA during these years.
+
+2005 – making a business sense of a passion
+
+The “business” of nature camping was growing with new destinations, creating value additions…and the time had come for a larger organisation. Anala Outdoors established as a private limited company under Indian Companies Act with Chandresh Lodhiya, Imtiyaz  Gafoorjiwala and Madhu Menon as its promoters & directors.
+
+Anala Outdoors continues the legacy of the movement that creates an environment conscious society through its innovative outdoor educational camps. Currently, the camps are organised at Hingolgadh, Jambughoda, Little & Greaterrn Ranns of Kachchh, Polo, Shoolpaneshwar and Gulf of Kachchh in Gujarat, Mount Abu, Kumbalgadh, Tejo ka Guda  & Jaisamand in Rajasthan, Panchgani in Maharashtra,  Dalhousie, Shimla, & Manali in Himachal Pradesh, Jayalgarh and Sitlakhet in Uttarakhand... and the list is still growing.
+
+From the rich experience gained from years of conducting environment-related activities and nature camps, ANALA OUTDOORS has initiated the concept of Eco-Tours in a modern way. Escorted tours to various have been made enjoyable and converted into learning experiences. Sikkim, Andaman & Nicobar, Lakshadweep Islands, Udaipur, Hyderabad Wagah Border, Periyar Tiger Reserve, Corbett National Park, Kashmir Valley…the list is getting expanded with every passing year. This programme is meant for Schools as well as individuals.
+
+Apart from the regular Camps & Tours, Anala Outdoors is also active in the field of Corporate HR and Team Building activities. OBT – Outbound Training is fast catching up with the corporate world as an alternative for their expensive indoor training activities. In this programme, Anala Outdoors utilizes the elements available in the outdoors for developing team-building, inter-personal communication and risk management. 
+
+Ahmedabad Nature Lovers’ Association became part of the social responsibility of Anala Outdoors and continues to play an instrumental role in making environmental awareness and action a priority among city planners and the citizens of Ahmedabad.
+
+
+THE OWL  in our logo
+
+
+In many parts of the world, owl has been associated with death and misfortune, mainly due to their nocturnal activity and frightening screeching call. In most parts of India, an owl is called “ullu” – meaning dumb. Both these impressions have no scientific background and seem to be malicious for the wonderful creature that is Owl.
+
+Another interesting association we discovered is that owl is the symbol of wealth and prosperity. The owl is considered to be the vehicle of Goddess of wealth, Laxmi and thus it is considered lucky if an owl resides near a house. Our search further revealed that the Greek goddess of knowledge Athena was always depicted accompanied by an owl and it has remained a common western symbol of wisdom. There, it is called a “wise owl”.
+
+We started asking ourselves, who can resist the combination of wealth and wisdom and what more can we ask for?
+
+From joy springs all creation.
+
+
+
+                        </div> <!-- row -->
+                        <div class="tm-banner-overlay"></div>
+                    </div>  <!-- .container -->                   
+                </div>     <!-- .tm-container-outer -->                 
+            </section>
+
+            
+    </script>             
+
+</body>
+</html>
